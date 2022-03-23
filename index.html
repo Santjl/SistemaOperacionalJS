@@ -30,6 +30,27 @@
             </main>
 
         </section>
+        
+        <section id="sobre-mim" class="window hidded">
+
+            <header id="windowBrowserHeader" class="window-header" >
+                <section>
+                    <span class="button close" onclick="windowHandler('browser')"></span>
+                    <span class="button maximize" onclick="maximizeHandler('browser')"></span>
+                    <span class="button minimize"></span>
+                </section>
+                <span class="window-name">Sobre Mim</span>
+            </header>
+
+            <main>
+
+                <iframe src="https://santjl.github.io/MinhaPagina/" frameborder="0" ></iframe>
+
+            </main>
+
+        </section>
+
+        
 
         <section class="window hidded" id="map">
 
@@ -75,7 +96,7 @@
                 <h1>Lixeira</h1>
             </li>
             <li class="icon">
-                <img src="https://img.icons8.com/color/344/folder-invoices--v1.png" alt="Icone de Pasta">
+                <img src="https://img.icons8.com/color/344/folder-invoices--v1.png" alt="Icone de Pasta" onclick="windowHandler('sobre-mim')">
                 <h1>Meus Documentos</h1>
             </li>
             <li class="icon">

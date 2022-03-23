@@ -244,5 +244,126 @@ body {
     }
   }
 
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    background-color: #000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.493);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000;
+  }
+  
+  .principal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #202020, #000000);
+    align-items: center;
+    justify-content: center;
+  
+    .header {
+        position: absolute;
+        top: 0;
+      height: 90px;
+      color: rgba(255, 255, 255, 0.719);
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      width: 100%;
+      justify-content: space-between;
+  
+      h2 {
+        font-family: "Dancing Script", cursive;
+        font-size: 30px;
+      }
+  
+      .links{
+          display: flex;
+          flex-direction: row;
+          gap:20px;
+  
+          img {
+            height: 30px;
+            color: white;
+          }
+      }
+    }
+  
+    .sobre {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.719);
+  
+      .sobre-mim {
+        margin: 20px 0;
+        width: 60vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+  
+  
+        .imagem {
+            img {
+              border-radius: 50%;
+            max-height: 350px;
+            min-width: 350px;
+            height: auto;
+            width: auto;
+          }
+        }
+      }
+    }
+  
+    .competencias{
+        padding-top: 40px;
+        
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  position: absolute;
+  bottom: 0;
+  
+      .icones{
+          display: flex;
+          flex-direction: row;
+          gap:10px;
+  
+          img{
+              margin: 20px 0;
+              height: 50px;
+          }
+  
+          .sql{
+            width: 75px;
+            display: flex;
+            justify-content: end;
+          }
+      }
+    }
+  }
+  
+  .segunda-parte {
+    background-color: salmon;
+    height: 100vh;
+  }
+  
+
 //   
 
